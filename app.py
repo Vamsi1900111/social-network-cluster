@@ -29,7 +29,7 @@ def network():
     messege=request.form['message']
     id=random_id+1
     data={'id':id,'sender':sender,'receiver':receiver,'messege':messege}
-    df=df.append(data,ignore_index=True)
+    df.loc[len(df)] = data
     df = df.drop_duplicates(subset='id')
     df.to_csv('data.csv',index=False)
     # new_row1=np.array([['jjjjjjjj','eeeeeeeee'],['jjjjjjjj','eeeeeeeee']])
