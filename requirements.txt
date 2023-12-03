@@ -1,9 +1,7 @@
 flask
 matplotlib
 numpy
-scikit-learn
-io
-string 
+scikit-learn 
 pandas
 networkx
 collections
