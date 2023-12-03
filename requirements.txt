@@ -1,5 +1,4 @@
 flask
-random
 matplotlib
 numpy
 base64
