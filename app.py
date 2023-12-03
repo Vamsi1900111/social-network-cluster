@@ -55,7 +55,7 @@ def network():
             edges[(sender, receiver)] = count
     for (sender, receiver), count in edges.items():
         graph.add_edge(sender, receiver, weight=count)
-    plt.figure(figsize=(10,10))
+    plt.figure(figsize=(15,20))
     nx.draw(graph, pos=nx.spring_layout(graph),node_color=node_colours, with_labels=True)
     img1 = BytesIO()
     plt.savefig(img1, format='png')
