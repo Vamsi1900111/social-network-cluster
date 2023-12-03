@@ -1,0 +1,11 @@
+flask
+random
+matplotlib
+numpy
+base64
+sklearn
+io
+string 
+pandas
+networkx
+collections
